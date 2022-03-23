@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ContentForReuse">
+    <title>Content for Reuse</title>
+    <shortdesc>This is a demonstration topic that shows reusable content, tagged with id attributes,
+        for conref'ing into other topics. The topic filename is "ContentForReuse.dita", and the "id"
+        of the top-level &lt;concept> tag is "ContentForReuse".</shortdesc>
+    <conbody>
+        <p id="p_ndl_xmm_hhb">The following paragraph can be conref'ed in its entirety. The "id"
+            attribute value of the &lt;p> tag is "SubmitPara". You can conref it into a paragraph in
+            another topic via &lt;p conref="ContentForReuse.dita#ContentForReuse/SubmitPara">. Or
+            you can conref only the Submit button. Its "id" value is "SubmitButton". You can conref
+            it into another topic via &lt;uicontrol
+            conref="ContentForReuse.dita#ContentForReuse/SubmitButton>.</p>
+        <p id="SubmitPara"><ph platform="desktop">Click</ph>
+            <ph platform="mobile">Tap</ph> the <uicontrol id="SubmitButton">Confirm</uicontrol>
+            button.</p>
+        <p id="p_tr1_1nm_hhb">The following paragraph has an "id" attribute value of "Copyright" can
+            can be conref'ed into another topic. You can conref it into a paragraph in another topic
+            via "&lt;p conref="ContentForReuse.dita#ContentForReuse/Copyright">.</p>
+        <p id="Copyright">Copyright 2021 Carnegie Mellon University.</p>
+    </conbody>
+</concept>

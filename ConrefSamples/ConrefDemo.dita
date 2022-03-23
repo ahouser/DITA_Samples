@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_vwh_b4m_hhb">
+    <title>Conref Demo Topic</title>
+    <shortdesc>This topic includes content conref'ed from the topic
+        "ContentForReuse.dita".</shortdesc>
+    <conbody>
+        <p>The following paragraph is a conref. It includes filtering attributes that will take
+            effect if you apply filtering, even though the paragraph is a conref.</p>
+        <p id="p_fgy_24m_hhb" conref="ContentForReuse.dita#ContentForReuse/SubmitPara"/>
+        <p id="p_gfw_g4m_hhb">The following paragraph only conref's the &lt;uicontrol> tag. You
+            might conref a product name this way (probably using a &lt;ph> tag with an "id"
+            attribute value for the product name).</p>
+        <p id="SubmitPara"><ph platform="desktop">Click</ph>
+            <ph platform="mobile">Tap</ph> the <uicontrol id="SubmitButton"
+                conref="ContentForReuse.dita#ContentForReuse/SubmitButton"/> button.</p>
+        <p id="p_gtq_p4m_hhb">The following paragraph demonstrates conref'ing a copyright statement.
+            The entire paragraph is a conref.</p>
+        <p id="p_qzm_r4m_hhb" conref="ContentForReuse.dita#ContentForReuse/Copyright"/>
+    </conbody>
+</concept>
